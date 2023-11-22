@@ -43,7 +43,7 @@ try:
     # User table
     users = [(1, 'David'), (2, 'Eric'), (3, 'Kevin')]
     for userid, user in users:
-        cur.execute(f"INSERT INTO users VALUES ({userid}, '{user}');")
+        cur.execute(f"INSERT INTO users VALUES ({userid}, ?);", (user, ))
 
     # Movies table
     # Insert from the file
