@@ -47,7 +47,7 @@ try:
 
     # Movies table
     # Insert from the file
-    cur.execute(f"COPY MOVIES FROM '/Users/rishabhzn200/movies.dat' delimiter '_';")
+    cur.execute("COPY MOVIES FROM '/Users/rishabhzn200/movies.dat' delimiter '_';")
 
     # Ratings Table
     allratings = [(1, 122, 5.0), (1, 185, 4.5), (2, 231, 4.0), (2, 294, 3.5), (3, 316, 3.0)]
